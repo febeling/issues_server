@@ -12,7 +12,7 @@ config :web,
 # Configures the endpoint
 config :web, PlapProp.Web.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "sN1Cxr6AGoFemH3CtQUk0Pg+GszoppIL89lYaf+EqeFB+b5xIvueJyWtKxB+LOpW",
+  secret_key_base: "1B8AaQKtmmiwhtBUcbnChOdY3JnfuWmEO4CidPBBLQKd3w7SCB6jOj0a0b/BrLLN",
   render_errors: [view: PlapProp.Web.ErrorView, accepts: ~w(html json)],
   pubsub: [name: PlapProp.Web.PubSub,
            adapter: Phoenix.PubSub.PG2]

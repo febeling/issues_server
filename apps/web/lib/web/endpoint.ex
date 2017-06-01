@@ -36,7 +36,7 @@ defmodule PlapProp.Web.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_web_key",
-    signing_salt: "8GpTq2fc"
+    signing_salt: "Jy0IguM1"
 
   plug PlapProp.Web.Router
 end
