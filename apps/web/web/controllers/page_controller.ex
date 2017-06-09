@@ -1,5 +1,5 @@
-defmodule PlapProp.Web.PageController do
-  use PlapProp.Web.Web, :controller
+defmodule PlanProp.Web.PageController do
+  use PlanProp.Web.Web, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

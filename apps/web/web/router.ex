@@ -1,5 +1,5 @@
-defmodule PlapProp.Web.Router do
-  use PlapProp.Web.Web, :router
+defmodule PlanProp.Web.Router do
+  use PlanProp.Web.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -11,16 +11,19 @@ defmodule PlapProp.Web.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    # plug :fetch_session
+    # plug :assign_current_user
   end
 
-  scope "/", PlapProp.Web do
-    pipe_through :browser # Use the default browser stack
+  scope "/", PlanProp.Web do
+    pipe_through :browser
 
     get "/", PageController, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", PlapProp.Web do
-  #   pipe_through :api
-  # end
+  scope "/api", PlanProp.Web do
+    pipe_through :api
+
+    post "/commands", API.CommandController, :dispatch
+  end
 end

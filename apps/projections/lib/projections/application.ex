@@ -3,10 +3,14 @@ defmodule PlanProp.Projections.Application do
   # for more information on OTP Applications
   @moduledoc false
 
+  require Logger
+
   use Application
 
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
+
+    Logger.debug "#{__MODULE__} starts"
 
     # Define workers and child supervisors to be supervised
     children = [

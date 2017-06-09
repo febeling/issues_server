@@ -1,0 +1,12 @@
+{
+  "command": {
+    
+    "issue_uuid": "0ae665da-940e-4838-83a2-68482d7a1aa7",
+    "author_uuid": "cfef397a-4583-4fa0-9452-edbc2e0bce9b",
+    "type": "Mangel",
+    "status": "Erfasst",
+    "description": "Es fehlen die Medien im Aussenbereich, daher werden Kernbohrungen nötig.",
+    "location": ["Haus 1", "2. OG", "R201"],
+    "created_at": "2017-06-09 09:28:22.960580Z"
+  }
+}

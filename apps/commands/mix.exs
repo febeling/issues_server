@@ -4,6 +4,10 @@ defmodule PlanProp.Commands.Mixfile do
   def project do
     [app: :commands,
      version: "0.1.0",
+     build_path: "../../_build",
+     config_path: "../../config/config.exs",
+     deps_path: "../../deps",
+     lockfile: "../../mix.lock",
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -26,8 +30,14 @@ defmodule PlanProp.Commands.Mixfile do
   #
   #   {:my_dep, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
   #
+  # To depend on another app inside the umbrella:
+  #
+  #   {:my_app, in_umbrella: true}
+  #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:vex, "~> 0.6.0"}
+    ]
   end
 end

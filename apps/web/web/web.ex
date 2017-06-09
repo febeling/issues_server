@@ -1,12 +1,12 @@
-defmodule PlapProp.Web.Web do
+defmodule PlanProp.Web.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use PlapProp.Web.Web, :controller
-      use PlapProp.Web.Web, :view
+      use PlanProp.Web.Web, :controller
+      use PlanProp.Web.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -24,16 +24,16 @@ defmodule PlapProp.Web.Web do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: PlapProp.Web
+      use Phoenix.Controller, namespace: PlanProp.Web
 
-      import PlapProp.Web.Router.Helpers
-      import PlapProp.Web.Gettext
+      import PlanProp.Web.Router.Helpers
+      import PlanProp.Web.Gettext
     end
   end
 
   def view do
     quote do
-      use Phoenix.View, root: "web/templates", namespace: PlapProp.Web
+      use Phoenix.View, root: "web/templates", namespace: PlanProp.Web
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_csrf_token: 0, get_flash: 2, view_module: 1]
@@ -41,9 +41,9 @@ defmodule PlapProp.Web.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import PlapProp.Web.Router.Helpers
-      import PlapProp.Web.ErrorHelpers
-      import PlapProp.Web.Gettext
+      import PlanProp.Web.Router.Helpers
+      import PlanProp.Web.ErrorHelpers
+      import PlanProp.Web.Gettext
     end
   end
 
@@ -56,7 +56,7 @@ defmodule PlapProp.Web.Web do
   def channel do
     quote do
       use Phoenix.Channel
-      import PlapProp.Web.Gettext
+      import PlanProp.Web.Gettext
     end
   end
 

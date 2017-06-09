@@ -1,4 +1,4 @@
-# PlapProp.Web
+# PlanProp.Web
 
 To start your Phoenix app:
 

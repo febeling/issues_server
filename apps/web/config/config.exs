@@ -7,20 +7,22 @@ use Mix.Config
 
 # General application configuration
 config :web,
-  namespace: PlapProp.Web
+  namespace: PlanProp.Web
 
 # Configures the endpoint
-config :web, PlapProp.Web.Endpoint,
+config :web, PlanProp.Web.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "1B8AaQKtmmiwhtBUcbnChOdY3JnfuWmEO4CidPBBLQKd3w7SCB6jOj0a0b/BrLLN",
-  render_errors: [view: PlapProp.Web.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: PlapProp.Web.PubSub,
+  render_errors: [view: PlanProp.Web.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: PlanProp.Web.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
+  metadata: [:request_id],
+  handle_otp_reports: true,
+  handle_sasl_reports: true
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

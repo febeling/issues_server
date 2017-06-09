@@ -1,7 +1,7 @@
-defmodule PlapProp.Web.Endpoint do
+defmodule PlanProp.Web.Endpoint do
   use Phoenix.Endpoint, otp_app: :web
 
-  socket "/socket", PlapProp.Web.UserSocket
+  socket "/socket", PlanProp.Web.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -38,5 +38,5 @@ defmodule PlapProp.Web.Endpoint do
     key: "_web_key",
     signing_salt: "Jy0IguM1"
 
-  plug PlapProp.Web.Router
+  plug PlanProp.Web.Router
 end

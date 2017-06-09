@@ -1,5 +1,5 @@
-defmodule PlapProp.Web.ErrorView do
-  use PlapProp.Web.Web, :view
+defmodule PlanProp.Web.ErrorView do
+  use PlanProp.Web.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

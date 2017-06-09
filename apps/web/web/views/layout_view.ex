@@ -1,3 +1,3 @@
-defmodule PlapProp.Web.LayoutView do
-  use PlapProp.Web.Web, :view
+defmodule PlanProp.Web.LayoutView do
+  use PlanProp.Web.Web, :view
 end

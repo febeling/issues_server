@@ -1,4 +1,4 @@
-defmodule PlapProp.Web.ChannelCase do
+defmodule PlanProp.Web.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -22,7 +22,7 @@ defmodule PlapProp.Web.ChannelCase do
 
 
       # The default endpoint for testing
-      @endpoint PlapProp.Web.Endpoint
+      @endpoint PlanProp.Web.Endpoint
     end
   end
 

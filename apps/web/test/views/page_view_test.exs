@@ -1,3 +1,3 @@
-defmodule PlapProp.Web.PageViewTest do
-  use PlapProp.Web.ConnCase, async: true
+defmodule PlanProp.Web.PageViewTest do
+  use PlanProp.Web.ConnCase, async: true
 end

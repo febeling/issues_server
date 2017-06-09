@@ -1,5 +1,5 @@
-defmodule PlapProp.Web.PageControllerTest do
-  use PlapProp.Web.ConnCase
+defmodule PlanProp.Web.PageControllerTest do
+  use PlanProp.Web.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

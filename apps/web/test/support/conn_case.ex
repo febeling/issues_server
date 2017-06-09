@@ -1,4 +1,4 @@
-defmodule PlapProp.Web.ConnCase do
+defmodule PlanProp.Web.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -20,10 +20,10 @@ defmodule PlapProp.Web.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      import PlapProp.Web.Router.Helpers
+      import PlanProp.Web.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint PlapProp.Web.Endpoint
+      @endpoint PlanProp.Web.Endpoint
     end
   end
 

@@ -1,4 +1,4 @@
-defmodule PlapProp.Web.ErrorHelpers do
+defmodule PlanProp.Web.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule PlapProp.Web.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(PlapProp.Web.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(PlanProp.Web.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(PlapProp.Web.Gettext, "errors", msg, opts)
+      Gettext.dgettext(PlanProp.Web.Gettext, "errors", msg, opts)
     end
   end
 end
