@@ -18,12 +18,13 @@ defmodule PlanProp.Issues.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [extra_applications: [:logger],
-     applications: [
-       :commanded,
-       :eventstore,
-     ],
-     mod: {PlanProp.Issues.Application, []}]
+    [
+      extra_applications: [
+        :logger,
+        :eventstore,
+       ],
+       mod: {PlanProp.Issues.Application, []}
+     ]
   end
 
   # Dependencies can be Hex packages:
@@ -40,7 +41,7 @@ defmodule PlanProp.Issues.Mixfile do
       {:commands, in_umbrella: true},
       {:events, in_umbrella: true},
       {:commanded, "~> 0.11"},
-      {:eventstore, "~> 0.9"},
+      # {:eventstore, "~> 0.9"},
       {:commanded_eventstore_adapter, "~> 0.1"}
     ]
   end
